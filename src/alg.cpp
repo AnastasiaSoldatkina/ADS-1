@@ -12,14 +12,13 @@ bool checkPrime(uint64_t value) {
       }
       if (u == 2) {
           return true;
-      }
-      else {
+      } else {
           return false;
       }
 }
 
 uint64_t nPrime(uint64_t n) {
-  int ar[8] = { 6,5,7,13,9,4,3,21 };
+  int ar[8] = { 6, 5, 7, 13, 9, 4, 3, 21 };
       int u = 0;
       int r = 0;
       for (int j = 0; j < 8; j++) {
@@ -29,7 +28,7 @@ uint64_t nPrime(uint64_t n) {
               if (u == n) {
                   return ar[j];
                   break;
-              }  
+              }
           }
       }
       if (n = 0 || n > r) {
@@ -38,7 +37,7 @@ uint64_t nPrime(uint64_t n) {
 }
 
 uint64_t nextPrime(uint64_t value) {
-  int ar[8] = { 6,5,7,13,9,4,3,21 };
+  int ar[8] = { 6, 5, 7, 13, 9, 4, 3, 21 };
       int j = 0;
       for (j; j < 8; j++) {
           if (ar[j] == value) {
@@ -58,7 +57,7 @@ uint64_t nextPrime(uint64_t value) {
 }
 
 uint64_t sumPrime(uint64_t hbound) {
-  int ar[8] = { 6,5,7,13,9,4,3,21 };
+  int ar[8] = { 6, 5, 7, 13, 9, 4, 3, 21 };
       int j = 0;
       int Sum = 0;
       for (j; j < 8; j++) {
