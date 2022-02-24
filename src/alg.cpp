@@ -42,7 +42,7 @@ uint64_t sumPrime(uint64_t hbound) {
   int Sum = 0;
     for (int i = 0; i < hbound; i++) {
         if (checkPrime(i) == true) {
-            Sum = Sum + i;
+            Sum += i;
         }
     }
     return Sum;
